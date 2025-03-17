@@ -9,11 +9,11 @@ import time
 import random
 from typing import List, Dict, Tuple, Set
 
-from selp_twtl.twtl.grammar import Atomic, Conjunction, WithinTime, AlwaysDuringTime, Sequence
-from selp_twtl.twtl.automaton import TimedAutomaton
-from selp_twtl.translator.nl_to_twtl import NLtoTWTL
-from selp_twtl.planner.constrained_decoding import TWTLConstrainedDecoding, ActionInfo
-from selp_twtl.monitoring.execution_monitor import TWTLExecutionMonitor
+from tempo_twtl.twtl.grammar import Atomic, Conjunction, WithinTime, AlwaysDuringTime, Sequence
+from tempo_twtl.twtl.automaton import TimedAutomaton
+from tempo_twtl.translator.nl_to_twtl import NLtoTWTL
+from tempo_twtl.planner.constrained_decoding import TWTLConstrainedDecoding, ActionInfo
+from tempo_twtl.monitoring.execution_monitor import TWTLExecutionMonitor
 
 
 def create_drone_action_info() -> Dict[str, ActionInfo]:
